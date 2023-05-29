@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>TiempoDojo</title>
+</head>
+<body>
+    <div class="menu-top">
+        <div class="container">
+            <div class="menu-columns">
+                <h1>DojoWeather</h1>
+                <div class="buttons">
+                    <a href="#" onclick="alert('Cargando informe meteorológico…')">Burbank</a>
+                    <a href="#" onclick="alert('Cargando informe meteorológico…')">Chicago</a>
+                    <a href="#" onclick="alert('Cargando informe meteorológico…')">Dallas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="container">
+            <div class="top-main">
+                <h2>San Jose</h2>
+                <div class="temp-select">
+                    <p>Show temperature in</p>
+                    <select onchange="changeTempUnit(this)">
+                        <option value="cen">°C</option>
+                        <option value="far">°F</option>
+                    </select>
+                </div>
+            </div>
+            <div class="main">
+                <div class="card-temp">
+                    <h2>Today</h2>
+                    <img src="./assets/some_rain.png" alt="imagen clima">
+                    <p>some rain</p>
+                    <div class="temps">
+                        <h2 class="color-red"><span id="tempmax1"></span></h2>
+                        <h2 class="color-blue"><span id="tempmin1"></span></h2>
+                    </div>
+                </div>
+                <div class="card-temp">
+                    <h2>Tomorrow</h2>
+                    <img src="./assets/some_sun.png" alt="imagen clima">
+                    <p>some sun</p>
+                    <div class="temps">
+                        <h2 class="color-red"><span id="tempmax2"></span></h2>
+                        <h2 class="color-blue"><span id="tempmin2"></span></h2>
+                    </div>
+                </div>
+                <div class="card-temp">
+                    <h2>Friday</h2>
+                    <img src="./assets/some_clouds.png" alt="imagen clima">
+                    <p>some clouds</p>
+                    <div class="temps">
+                        <h2 class="color-red"><span id="tempmax3"></span></h2>
+                        <h2 class="color-blue"><span id="tempmin3"></span></h2>
+                    </div>
+                </div>
+                <div class="card-temp">
+                    <h2>Saturday</h2>
+                    <img src="./assets/some_sun.png" alt="imagen clima">
+                    <p>some sun</p>
+                    <div class="temps">
+                        <h2 class="color-red"><span id="tempmax4"></span></h2>
+                        <h2 class="color-blue"><span id="tempmin4"></span></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cookie-banner" id="cookie">
+        <div class="container-cookie">
+            <div class="left">
+            <img src="./assets/cookie.png" alt="cookie.jpg"/>
+            </div>   
+                <div class="cookie-banner-main">
+                    <h2>Stop! Cookie time</h2>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+                </div>
+            <div class="right">
+            <button class="accept-btn" onclick="hideCookie()">I Accept</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
